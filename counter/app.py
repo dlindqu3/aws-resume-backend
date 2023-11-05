@@ -3,9 +3,9 @@ import json
 # import requests
 import boto3
 
-dynamodb = boto3.resource('dynamodb')
-table_name = 'Counter'
-counter_table = dynamodb.Table(table_name)
+# dynamodb = boto3.resource('dynamodb')
+# table_name = 'Counter'
+# counter_table = dynamodb.Table(table_name)
 
 
 def lambda_handler(event, context):
@@ -30,8 +30,23 @@ def lambda_handler(event, context):
         Return doc: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html
     """    
     try:
-        my_count = 0
-    
+        
+        # my_count = 0 
+
+        # res = counter_table.get_item(Key={ "isMainItem": True })
+
+        # ##  if res contains an Item, put_item with current count + 1
+        # if res["Item"]: 
+        #     return res["Item"]
+        # ## if res contains NO Item, put_item with count = 0 
+        # else: 
+        #     counter_table.put_item(
+        #         Item={
+        #             "isMainItem": True,
+        #             "count": 0
+        #         }
+        #     )
+         
         return {
             "statusCode": 200,
             "headers": {
@@ -41,7 +56,7 @@ def lambda_handler(event, context):
             },
             "body": json.dumps({
                 "message": "res from lambda",
-                "newCount": my_count
+                "newCount": 0
             }),
         }
     
