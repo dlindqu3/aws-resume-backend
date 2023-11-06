@@ -26,7 +26,8 @@ Resources:
       Runtime: python3.11
       Policies: 
         - DynamoDBCrudPolicy:
-            TableName: !Ref CounterTable
+            TableName: 
+              !Ref CounterTable
       Architectures:
         - x86_64
       Events:
@@ -37,5 +38,7 @@ Resources:
             Method: get
   CounterTable: 
     Type: AWS::Serverless::SimpleTable
+    Properties: 
+      TableName: CounterTable
 
 

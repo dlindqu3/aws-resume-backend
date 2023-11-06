@@ -3,24 +3,39 @@ import json
 # import requests
 import boto3
 
-# dynamodb = boto3.resource('dynamodb')
-# table = dynamodb.Table("aws-resume-stack-CounterTable-1A5PBB6IXPXTO")
+dynamodb = boto3.resource('dynamodb')
+# table2 = dynamodb.Table("CounterTable")
 
 
 def lambda_handler(event, context):
 
-    return {
-        "statusCode": 200,
-        "headers": {
-            "Access-Control-Allow-Headers" : "Content-Type",
-            "Access-Control-Allow-Origin": "*",  
-            "Access-Control-Allow-Methods": "GET" 
-        },
-        "body": json.dumps({
-            "message": "res from lambda",
-            "newCount": 0
-        }),
-    }
+    try: 
+        table2 = dynamodb.Table("CounterTable")
+
+        return {
+            "statusCode": 200,
+            "headers": {
+                "Access-Control-Allow-Headers" : "Content-Type",
+                "Access-Control-Allow-Origin": "*",  
+                "Access-Control-Allow-Methods": "GET" 
+            },
+            "body": json.dumps({
+                "message": "res from lambda",
+                "newCount": 0, 
+                "table2": table2
+            }),
+        }
+    
+    except Exception as e: 
+        return {
+            "statusCode": 500,
+            "body": {
+                "event": event,
+                "exception": e,
+                "table2": table2
+            }
+        }
+
     # try: 
     #     res = table.get_item(Key={ "isMainItem": True })
     #     ##  if res contains an Item, put_item with current count + 1
