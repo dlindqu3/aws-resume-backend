@@ -39,6 +39,6 @@ Resources:
   CounterTable: 
     Type: AWS::Serverless::SimpleTable
     Properties: 
-      TableName: CounterTable
+      TableName: MyCounterTable
 
 
