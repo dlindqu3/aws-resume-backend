@@ -8,7 +8,7 @@ table1 = dynamodb.Table("MyCounterTable")
 
 
 def lambda_handler(event, context):
-    ## this line added to test GitHub Actions with SAM & tests 
+    ## this line added to test GitHub Actions with SAM build / deploy & tests 
 
     count = 0
 
