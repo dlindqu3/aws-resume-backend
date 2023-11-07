@@ -3,13 +3,14 @@
 - The background of the project is built with tools like AWS SAM, API Gateway, Lambda, and DynamoDB 
 - My iteration of the project will follow similar guidelines, but will add other services / capabilities as I see fit 
 
+
 ### Steps to push code 
 1. terminal: "sam build" 
 2. terminal: "sam deploy --guided" 
   - this command is also used for updates
 
 
-### sources 
+### sources
 1. AWS Documentation, "Tutorial: Deploying a Hello World application", [link](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-getting-started-hello-world.html)
 2. Stack Overflow, "How to enable CORS with AWS SAM", [link](https://stackoverflow.com/questions/67065130/how-to-enable-cors-with-aws-sam)
 3. AWS Events, "AWS re:Invent 2022 - Building real-world serverless applications with AWS SAM (SVS303)", [link](https://www.youtube.com/watch?v=jZcS-XRt2Mo)
@@ -20,3 +21,4 @@
 8. AWS Documentation, "AWS SAM policy templates", [link](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-policy-templates.html)
 9. AWS Documentation, "Put an item in a DynamoDB table using an AWS SDK", [link](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_PutItem_section.html)
 10. DigitalOcean, "How To Use the JavaScript Fetch API to Get Data", [link](https://www.digitalocean.com/community/tutorials/how-to-use-the-javascript-fetch-api-to-get-data) 
+11. Travis Luong, "How to Test an API with Pytest and Requests", [link](https://www.travisluong.com/how-to-test-an-api-with-pytest-and-requests/)
