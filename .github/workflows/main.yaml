@@ -48,9 +48,11 @@ jobs:
       - name: Test with pytest
         run: |
           pytest     
-      - run: sam deploy --guided
-      # - run: sam deploy --debug --no-confirm-changeset --no-fail-on-empty-changeset --stack-name aws-resume-stack --s3-bucket ${{ secrets.S3_FOR_SAM }} --capabilities CAPABILITY_IAM --region us-east-1
+      # - run: sam deploy --guided
+      - run: sam deploy --debug --no-confirm-changeset --no-fail-on-empty-changeset --stack-name aws-resume-stack --s3-bucket ${{ secrets.S3_FOR_SAM }} --capabilities CAPABILITY_IAM --region us-east-1
 
+## ERROR FROM DEPLOY: 
+## - run: sam deploy --debug --no-confirm-changeset --no-fail-on-empty-changeset --stack-name aws-resume-stack --s3-bucket ${{ secrets.S3_FOR_SAM }} --capabilities CAPABILITY_IAM --region us-east-1
 ## error: Error: Cannot use both --resolve-s3 and --s3-bucket parameters in non-guided deployments. Please use only one or use the --guided option for a guided deployment.
   ## odd, because my "sam deploy" command only uses --s3-bucket
   ## fix: 
