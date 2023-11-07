@@ -1,7 +1,7 @@
 ## The Cloud Resume Challenge - AWS - Backend
 - The website [Cloud Resume Challenge](https://cloudresumechallenge.dev/docs/the-challenge/aws/) describes a sample AWS cloud project that involves hosting a resume copy on AWS 
 - The background of the project is built with tools like AWS SAM, API Gateway, Lambda, and DynamoDB 
-- My iteration of the project will follow similar guidelines, but will add other services / capabilities as I see fit 
+- My iteration of the project followed similar guidelines, but  added other services / capabilities as I saw fit 
 
 
 ### Steps to push code (without GitHub Actions)
@@ -13,6 +13,11 @@
 ### link to frontend repo & deployed site 
 - https://github.com/dlindqu3/aws-resume
 - https://cloud-resume-dlindqu.com/ 
+
+
+### GitHub Actions screenshots 
+<img src="./images/github_actions_with_sam_success1.png">
+<img src="./images/github_actions_with_sam_success2.png">
 
 
 ### sources
