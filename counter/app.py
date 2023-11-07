@@ -23,7 +23,7 @@ def lambda_handler(event, context):
 
         res2 = table1.put_item(
                 Item={
-                    "id": str(1),
+                    "id": str(2),
                     "count": new_count
                 }
             )
