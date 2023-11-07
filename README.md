@@ -4,10 +4,15 @@
 - My iteration of the project will follow similar guidelines, but will add other services / capabilities as I see fit 
 
 
-### Steps to push code 
+### Steps to push code (without GitHub Actions)
 1. terminal: "sam build" 
 2. terminal: "sam deploy --guided" 
   - this command is also used for updates
+
+
+### link to frontend repo & deployed site 
+- https://github.com/dlindqu3/aws-resume
+- https://cloud-resume-dlindqu.com/ 
 
 
 ### sources
@@ -22,3 +27,6 @@
 9. AWS Documentation, "Put an item in a DynamoDB table using an AWS SDK", [link](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_PutItem_section.html)
 10. DigitalOcean, "How To Use the JavaScript Fetch API to Get Data", [link](https://www.digitalocean.com/community/tutorials/how-to-use-the-javascript-fetch-api-to-get-data) 
 11. Travis Luong, "How to Test an API with Pytest and Requests", [link](https://www.travisluong.com/how-to-test-an-api-with-pytest-and-requests/)
+12. GitHub Documentation "Building and testing Python", [link](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python#testing-your-code)
+13. Julian Wood, "Using GitHub Actions to deploy serverless applications", [link](https://aws.amazon.com/blogs/compute/using-github-actions-to-deploy-serverless-applications/)
+14. AWS Documentation, "Default configuration file settings", [link](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-config.html#serverless-sam-cli-config-default)

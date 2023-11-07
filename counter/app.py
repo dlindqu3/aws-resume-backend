@@ -37,7 +37,8 @@ def lambda_handler(event, context):
                 "Access-Control-Allow-Methods": "GET" 
             },
             "body": json.dumps({
-                "newCount": str(new_count)
+                # "newCount": str(new_count)
+                "newCount": "-5"
             }),
         }
     
