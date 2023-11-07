@@ -15,7 +15,7 @@ def lambda_handler(event, context):
     print("lambda called")
 
     try: 
-        res = table1.get_item(Key={ "id": str(1) })
+        res = table1.get_item(Key={ "id": str(2) })
         print("res from get item:", res)
         # print("item from res: ", res["Item"])
 
