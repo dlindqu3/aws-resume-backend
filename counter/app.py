@@ -15,15 +15,15 @@ def lambda_handler(event, context):
     print("lambda called")
 
     try: 
-        res = table1.get_item(Key={ "id": str(2) })
+        res = table1.get_item(Key={ "id": str(3) })
         print("res from get item:", res)
-        # print("item from res: ", res["Item"])
+        print("item from res: ", res["Item"])
 
         new_count = res["Item"]["count"] + 1
 
         res2 = table1.put_item(
                 Item={
-                    "id": str(2),
+                    "id": str(3),
                     "count": new_count
                 }
             )
