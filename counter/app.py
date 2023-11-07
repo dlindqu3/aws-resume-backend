@@ -39,7 +39,10 @@ def lambda_handler(event, context):
             "body": json.dumps({
                 "newCount": str(new_count)
                 # "newCount": "-7"  
-                ## might need to fix later with cache invalidations 
+                ## might need to fix later 
+                    ## GA with a negative here will pass, next will fail 
+                    ## manually fixed with a cache invalidation in CloudFront
+                    ## later, find way to automate cache invalidation during test
             }),
         }
     
