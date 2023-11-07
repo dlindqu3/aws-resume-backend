@@ -38,7 +38,7 @@ def lambda_handler(event, context):
             },
             "body": json.dumps({
                 # "newCount": str(new_count)
-                "newCount": 85
+                "newCount": str(new_count)
                 # "newCount": "-7"  
                 ## might need to fix later 
                     ## GA with a negative here will pass, next will fail 
