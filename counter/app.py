@@ -9,11 +9,12 @@ table1 = dynamodb.Table("MyCounterTable")
 
 def lambda_handler(event, context):
     ## this line added to test GitHub Actions with SAM build / deploy & tests 
-
+    ## this line added again 
+    
     count = 0
 
     print("lambda called")
-
+  
     try: 
         res = table1.get_item(Key={ "id": str(3) })
         print("res from get item:", res)

@@ -9,6 +9,7 @@ def test_get_count_status_code():
     r = requests.get('https://xbhfm2l8qe.execute-api.us-east-1.amazonaws.com/Prod/counter')
     assert r.status_code == 200
 
+## testing for GH Actions 
 def test_get_count_returns_positive_integer(): 
     r = requests.get('https://xbhfm2l8qe.execute-api.us-east-1.amazonaws.com/Prod/counter')
     json_res = r.json()
