@@ -38,7 +38,8 @@ def lambda_handler(event, context):
             },
             "body": json.dumps({
                 "newCount": str(new_count)
-                # "newCount": "-7"
+                # "newCount": "-7"  
+                ## might need to fix later with cache invalidations 
             }),
         }
     
