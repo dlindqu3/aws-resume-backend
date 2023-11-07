@@ -38,7 +38,7 @@ def lambda_handler(event, context):
             },
             "body": json.dumps({
                 # "newCount": str(new_count)
-                "newCount": "-5"
+                "newCount": "-7"
             }),
         }
     

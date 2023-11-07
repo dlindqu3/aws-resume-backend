@@ -13,6 +13,9 @@ def test_get_count_returns_positive_integer():
     r = requests.get('https://xbhfm2l8qe.execute-api.us-east-1.amazonaws.com/Prod/counter')
     json_res = r.json()
     new_count_int = int(json_res["newCount"])
+    print("newCount from test: ", new_count_int)
+    newCount_over_zero = new_count_int > 0 
+    print("newCount_over_zero: ", newCount_over_zero)
     assert new_count_int > 0
 
 
