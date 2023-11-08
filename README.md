@@ -15,6 +15,10 @@
 - https://cloud-resume-dlindqu.com/ 
 
 
+## link to medium article 
+- https://medium.com/@dwight.lindquist/aws-sam-setup-for-lambda-api-gateway-and-dynamodb-542c46f1ff76 
+
+
 ### GitHub Actions screenshots 
 <img src="./images/github_actions_with_sam_success1.png">
 <img src="./images/github_actions_with_sam_success2.png">
